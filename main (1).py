@@ -1,6 +1,13 @@
-n = int (input ("Enter a number: "))
-factorial = 1
-if n >= 1:
-    for i in range (1, n+1):
-        factorial=factorial *i
-print("Factorial of the given number is: ", factorial)
+class player:
+  def play(self):
+    print("The Player is Playing cricket.")
+class batsman(player):
+  def play(self):
+    print("The Batsman is Batting.")
+class bowler(player):
+  def play(self):
+    print("The Bowler is Bowling")
+batsman=batsman()
+bowler=bowler()
+batsman.play()
+bowler.play()
