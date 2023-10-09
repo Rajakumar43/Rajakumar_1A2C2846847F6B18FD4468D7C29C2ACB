@@ -1,13 +1,5 @@
-class player:
-  def play(self):
-    print("The Player is Playing cricket.")
-class batsman(player):
-  def play(self):
-    print("The Batsman is Batting.")
-class bowler(player):
-  def play(self):
-    print("The Bowler is Bowling")
-batsman=batsman()
-bowler=bowler()
-batsman.play()
-bowler.play()
+year=int(input("Enter year to be checked:"))
+if(year%4==0 and year%100!=0 or year%400==0):
+    print("The year is a leap year!")
+else:
+    print("The year isn't a leap year!")
